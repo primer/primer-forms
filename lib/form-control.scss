@@ -1,5 +1,5 @@
 // Needs refactoring
-// scss-lint:disable QualifyingElement NestingDepth SelectorDepth SelectorTagTargeting
+// stylelint-disable selector-no-qualifying-type, selector-max-compound-selectors
 // Base form controls
 //
 // Overrides for common inputs for easier styling.
@@ -75,7 +75,6 @@ label {
   font-family: $mono-font;
 }
 
-
 // Checkboxes and Radiobuttons
 //
 // For checkboxes and radio button selections.
@@ -85,7 +84,6 @@ label {
   vertical-align: middle;
 
   label {
-
     em.highlight {
       position: relative;
       left: -4px;
@@ -111,7 +109,6 @@ label {
     color: #666;
   }
 }
-
 
 // Field groups
 //
@@ -147,16 +144,14 @@ label {
   .form-select { margin-top: 5px; }
 }
 
-
 // Hide the up/down buttons in <input type="number"> in the login form, the
 // input is used for two-factor auth codes, type="number" makes it more usable
 // on phones
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
-  -webkit-appearance: none;
+  appearance: none;
 }
-
 
 // Input groups
 

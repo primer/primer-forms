@@ -1,8 +1,7 @@
 // Needs refactoring
-// scss-lint:disable NestingDepth QualifyingElement SelectorTagTargeting
+// stylelint-disable selector-no-qualifying-type, selector-no-type
 dl.form-group > dd {
   .form-control {
-
     &.is-autocheck-loading,
     &.is-autocheck-successful,
     &.is-autocheck-errored {
@@ -25,16 +24,13 @@ dl.form-group > dd {
 
 // Retinization of form validation icons that aren't octicons yet
 @include retina-media-query {
-
   dl.form-group > dd {
     .form-control {
-
       &.is-autocheck-loading,
       &.is-autocheck-successful,
       &.is-autocheck-errored {
         background-size: 16px 16px;
       }
-
 
       &.is-autocheck-loading {
         background-image: url("/images/spinners/octocat-spinner-32.gif");
@@ -50,7 +46,6 @@ dl.form-group > dd {
     }
   }
 }
-
 
 // Credit cards
 //
@@ -176,8 +171,6 @@ dl.form-group > dd {
     border: 0;
   }
 }
-
-
 
 // Drag and drop
 //
@@ -364,8 +357,6 @@ div.composer {
 }
 
 .composer .tabnav { margin: 0 0 10px; }
-
-
 
 // Misc CSS
 //
