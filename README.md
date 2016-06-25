@@ -255,7 +255,7 @@ Attached an input and button to one another.
     <input class="form-control" type="text" placeholder="Username">
     <span class="input-group-button">
       <button class="btn">
-        <%= octicon :symbol => "clippy" %>
+        <%= octicon "clippy" %>
       </button>
     </span>
   </div>

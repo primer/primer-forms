@@ -4,6 +4,12 @@
 //
 // Overrides for common inputs for easier styling.
 
+// Disable ligatures in editable areas due to https://github.com/github/github/issues/56941
+input,
+textarea {
+  font-feature-settings: "liga" 0;
+}
+
 fieldset {
   padding: 0;
   margin: 0;
