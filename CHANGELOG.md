@@ -1,5 +1,6 @@
-# HEAD
+# v0.3.0
 
+ * Publishing a new version - Jon Rohan [github/github@eed0e96](https://github.com/github/github/commit/eed0e96)
  * Updating octicons to deprecate the use of :symbol - Jon Rohan [github/github@9eb0c63](https://github.com/github/github/commit/9eb0c63)
  * It should be on the desktop site - Pat Nakajima [github/github@5080f9d](https://github.com/github/github/commit/5080f9d)
  * Adding link to homepage in readme docs - Jon Rohan [github/github@633f421](https://github.com/github/github/commit/633f421)
