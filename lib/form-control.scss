@@ -17,15 +17,15 @@ fieldset {
 }
 
 label {
-  font-size: 13px;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 .form-control,
 .form-select {
   min-height: 34px;
-  padding: 7px 8px;
-  font-size: 13px;
+  padding: 6px 8px;
+  font-size: $body-font-size;
+  line-height: 20px;
   color: $text-gray-dark;
   vertical-align: middle;
   background-color: $bg-white;
@@ -58,10 +58,11 @@ label {
 
 // Mini inputs, to match .minibutton
 .input-sm {
-  min-height: 26px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  font-size: 12px;
+  min-height: 28px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: $font-size-small;
+  line-height: 20px;
 }
 
 // Large inputs

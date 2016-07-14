@@ -40,6 +40,7 @@ You can read more about other primer modules in the [full primer docs][docs].
 <!-- %docs
 title: Forms
 homepage: https://github.com/primer/forms
+status: Stable
 -->
 
 ### Forms
@@ -50,6 +51,35 @@ Style individual form controls and utilize common layouts.
 - Specific types of textual `<input>`s are styled automatically, but `.form-control` is available should you need it.
 - Always declare a `type` on your `<button>`s.
 - Form layouts rely on form groups.
+
+#### Kitchen sink
+
+All our inputs and buttons side-by-side for easy testing of sizing and alignment with one another.
+
+```html
+<p>
+  <button class="btn">Button</button>
+  <button class="btn select-menu-button">
+    Select menu
+  </button>
+  <input class="form-control" type="text" placeholder="Standard input">
+  <input class="form-control input-monospace" type="text" placeholder="Monospace input">
+  <select class="form-select">
+    <option>Select</option>
+  </select>
+</p>
+
+<p>
+  <button class="btn btn-sm">Small button</button>
+  <button class="btn btn-sm select-menu-button">
+    Select menu
+  </button>
+  <input class="form-control input-sm" type="text" placeholder="Small input">
+  <select class="form-select select-sm">
+    <option>Select</option>
+  </select>
+</p>
+```
 
 #### Example form
 

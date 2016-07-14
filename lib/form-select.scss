@@ -25,11 +25,11 @@
 }
 
 .select-sm {
-  height: 26px;
-  min-height: 26px;
+  height: 28px;
+  min-height: 28px;
   padding-top: 3px;
   padding-bottom: 3px;
-  font-size: 12px;
+  font-size: $font-size-small;
 
   &[multiple] {
     height: auto;
