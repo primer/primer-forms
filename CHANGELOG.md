@@ -1,3 +1,10 @@
+# HEAD
+
+ * Rename spacer variables - Sophie Shepherd [github/github@e5ffa47](https://github.com/github/github/commit/e5ffa47)
+ * First part of genpopping all system font changes: remove typographic overrides for font-size, line-height, etc on global components - Mark Otto [github/github@6c50e2d](https://github.com/github/github/commit/6c50e2d)
+ * Adding documentation status to most of the modules - Jon Rohan [github/github@b97695c](https://github.com/github/github/commit/b97695c)
+ * update forms docs to include kitchen sink examples for testing - Mark Otto [github/github@80a7094](https://github.com/github/github/commit/80a7094)
+
 # v0.3.0
 
  * Publishing a new version - Jon Rohan [github/github@eed0e96](https://github.com/github/github/commit/eed0e96)
