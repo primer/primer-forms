@@ -39,7 +39,7 @@ You can read more about other primer modules in the [full primer docs][docs].
 
 <!-- %docs
 title: Forms
-homepage: https://github.com/primer/forms
+homepage: https://github.com/primer/primer-forms
 status: Stable
 -->
 
