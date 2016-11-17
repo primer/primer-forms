@@ -304,20 +304,20 @@ dl.form-group > dd {
 
   .tabnav {
     position: relative;
-    padding: 10px 10px 0;
+    padding: $spacer-2 $spacer-2 0;
   }
 
   .comment {
     border: 1px solid #cacaca;
   }
 
-  .comment-form-error { margin-bottom: 10px; }
+  .comment-form-error { margin-bottom: $spacer-2; }
 
   .write-content,
   .preview-content {
     display: none;
-    padding: 0 0 10px;
-    margin: 0 10px;
+    padding: 0 0 $spacer-2;
+    margin: 0 $spacer-2;
   }
 
   &.write-selected .write-content,
@@ -330,7 +330,7 @@ dl.form-group > dd {
     width: 100%;
     min-height: 100px;
     max-height: 500px;
-    padding: 10px;
+    padding: $spacer-2;
     resize: vertical;
   }
 }
