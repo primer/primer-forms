@@ -35,15 +35,10 @@ $ npm run build
 
 ## Documentation
 
-You can read more about other primer modules in the [full primer docs][docs].
-
 <!-- %docs
 title: Forms
-homepage: https://github.com/primer/primer-forms
 status: Stable
 -->
-
-### Forms
 
 Style individual form controls and utilize common layouts.
 
