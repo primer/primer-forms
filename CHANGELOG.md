@@ -1,3 +1,8 @@
+# HEAD
+
+ * Fix alignment of features box in repo settings - pifafu [github/github@499abb6](https://github.com/github/github/commit/499abb6)
+ * Add many label and ids and aria to form controls - Mu-An Chiou [github/github@9bcb1dc](https://github.com/github/github/commit/9bcb1dc)
+
 # v0.6.0
 
  * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
