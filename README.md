@@ -53,25 +53,27 @@ All our inputs and buttons side-by-side for easy testing of sizing and alignment
 
 ```html
 <p>
-  <button class="btn">Button</button>
-  <button class="btn select-menu-button">
+  <button class="btn" type="button">Button</button>
+  <button class="btn select-menu-button" type="button" aria-expanded="false" aria-haspopup="true">
     Select menu
   </button>
-  <input class="form-control" type="text" placeholder="Standard input">
-  <input class="form-control input-monospace" type="text" placeholder="Monospace input">
-  <select class="form-select">
+  <input class="form-control" type="text" placeholder="Standard input" aria-label="Repository description">
+  <input class="form-control input-monospace" type="text" placeholder="Monospace input" aria-label="SHA">
+  <select class="form-select" aria-label="Important decision">
     <option>Select</option>
+    <option value="option 2">Option 2</option>
   </select>
 </p>
 
 <p>
-  <button class="btn btn-sm">Small button</button>
-  <button class="btn btn-sm select-menu-button">
+  <button class="btn btn-sm" type="button">Small button</button>
+  <button class="btn btn-sm select-menu-button" type="button" aria-expanded="false" aria-haspopup="true">
     Select menu
   </button>
-  <input class="form-control input-sm" type="text" placeholder="Small input">
-  <select class="form-select select-sm">
+  <input class="form-control input-sm" type="text" placeholder="Small input" aria-label="Repository description">
+  <select class="form-select select-sm" aria-label="Important decision">
     <option>Select</option>
+    <option value="option 1">Option 1</option>
   </select>
 </p>
 ```
@@ -109,8 +111,8 @@ Textual form controls have a white background by default. You can change this to
 
 ```html
 <form>
-  <input class="form-control" type="text" placeholder="Default input">
-  <input class="form-control input-contrast" type="text" placeholder="Input with contrast">
+  <input class="form-control" type="text" placeholder="Default input" aria-label="Default input">
+  <input class="form-control input-contrast" type="text" placeholder="Input with contrast" aria-label="Input with contrast">
 </form>
 ```
 
@@ -122,7 +124,7 @@ Make inputs smaller, larger, or full-width with an additional class.
 
 ```html
 <form>
-  <input class="form-control input-sm" type="text" placeholder="Small input">
+  <input class="form-control input-sm" type="text" placeholder="Small input" aria-label="Small input">
 </form>
 ```
 
@@ -130,7 +132,7 @@ Make inputs smaller, larger, or full-width with an additional class.
 
 ```html
 <form>
-  <input class="form-control input-lg" type="text" placeholder="Large input">
+  <input class="form-control input-lg" type="text" placeholder="Large input" aria-label="Large input">
 </form>
 ```
 
@@ -138,7 +140,7 @@ Make inputs smaller, larger, or full-width with an additional class.
 
 ```html
 <form>
-  <input class="form-control input-block" type="text" placeholder="Full-width input">
+  <input class="form-control input-block" type="text" placeholder="Full-width input" aria-label="Full-width input">
 </form>
 ```
 
@@ -148,7 +150,7 @@ Primer adds light `height` and `vertical-align` styles to `<select>`s for all br
 
 ```html
 <form>
-  <select class="form-select">
+  <select class="form-select" aria-label="Preference">
     <option>Choose an option</option>
     <option>Git</option>
     <option>Subversion</option>
@@ -165,7 +167,7 @@ Primer adds light `height` and `vertical-align` styles to `<select>`s for all br
 Use the `.select-sm` class to resize both default and custom `<select>`s to match the size of [our small buttons](/buttons/#default-buttons).
 
 ```html
-<select class="form-select select-sm">
+<select class="form-select select-sm" aria-label="Preference">
   <option>Choose an option</option>
   <option>Git</option>
   <option>Subversion</option>
@@ -175,7 +177,7 @@ Use the `.select-sm` class to resize both default and custom `<select>`s to matc
   <option>Battlestar Galactica</option>
 </select>
 
-<select class="form-select select-sm">
+<select class="form-select select-sm" aria-label="Preference">
   <option>Choose an option</option>
   <option>Git</option>
   <option>Subversion</option>
@@ -191,14 +193,14 @@ Use the `.select-sm` class to resize both default and custom `<select>`s to matc
 ```html
 <form>
   <dl class="form-group">
-    <dt><label>Example Text</label></dt>
-    <dd><input class="form-control" type="text" value="Example Value"></dd>
+    <dt><label for="example-text">Example Text</label></dt>
+    <dd><input class="form-control" type="text" value="Example Value" id="example-text"></dd>
   </dl>
 
   <dl class="form-group">
-    <dt><label>Example Select</label></dt>
+    <dt><label for="example-select">Example Select</label></dt>
     <dd>
-      <select class="form-select">
+      <select class="form-select" id="example-select">
         <option>Choose an option</option>
         <option>Git</option>
         <option>Subversion</option>
@@ -211,9 +213,9 @@ Use the `.select-sm` class to resize both default and custom `<select>`s to matc
   </dl>
 
   <dl class="form-group">
-    <dt><label>Example Textarea</label></dt>
+    <dt><label for="example-textarea">Example Textarea</label></dt>
     <dd>
-      <textarea class="form-control"></textarea>
+      <textarea class="form-control" id="example-textarea"></textarea>
     </dd>
   </dl>
 </form>
@@ -226,15 +228,15 @@ Convey errors and warnings for form groups. Add the appropriate class—either `
 ```html
 <form>
   <dl class="form-group errored">
-    <dt><label>Example Text</label></dt>
-    <dd><input class="form-control" type="text" value="Example Value"></dd>
-    <dd class="error">This example input has an error.</dd>
+    <dt><label for="example-text-errored">Example Text</label></dt>
+    <dd><input class="form-control" type="text" value="Example Value" id="example-text-errored" aria-describedby="form-error-text"></dd>
+    <dd class="error" id="form-error-text">This example input has an error.</dd>
   </dl>
   <br>
   <dl class="form-group warn">
-    <dt><label>Example Text</label></dt>
-    <dd><input class="form-control" type="text" value="Example Value"></dd>
-    <dd class="warning">This example input has a warning.</dd>
+    <dt><label for="example-text-warn">Example Text</label></dt>
+    <dd><input class="form-control" type="text" value="Example Value" id="example-text-warn" aria-describedby="form-warning-text"></dd>
+    <dd class="warning" id="form-warning-text">This example input has a warning.</dd>
   </dl>
 </form>
 ```
@@ -247,10 +249,10 @@ Utilities to spice up the alignment and styling of checkbox and radio controls.
 <form>
   <div class="form-checkbox">
     <label>
-      <input type="checkbox" checked="checked">
+      <input type="checkbox" checked="checked" aria-describedby="help-text-for-checkbox">
       Available for hire
     </label>
-    <p class="note">
+    <p class="note" id="help-text-for-checkbox">
       This will do insanely <strong>awesome</strong> and <strong>amazing</strong> things!
     </p>
   </div>
@@ -277,9 +279,9 @@ Attached an input and button to one another.
 ```html
 <form>
   <div class="input-group">
-    <input class="form-control" type="text" placeholder="Username">
+    <input class="form-control" type="text" placeholder="Username" aria-label="Username">
     <span class="input-group-button">
-      <button class="btn">
+      <button class="btn" type="button" aria-label="Copy to clipboard">
         <%= octicon "clippy" %>
       </button>
     </span>
@@ -293,7 +295,7 @@ Align buttons to the right—via `float: right` on the buttons—in forms with `
 
 ```html
 <div class="form-actions">
-  <button type="button" class="btn btn-primary">Save changes</button>
+  <button type="submit" class="btn btn-primary">Save changes</button>
   <button type="button" class="btn">Cancel</button>
 </div>
 ```
