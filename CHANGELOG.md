@@ -1,5 +1,6 @@
-# HEAD
+# v0.7.0
 
+ * updating versions after running version script - broccolini [github/github@61b8c6f](https://github.com/github/github/commit/61b8c6f)
  * Fix alignment of features box in repo settings - pifafu [github/github@499abb6](https://github.com/github/github/commit/499abb6)
  * Add many label and ids and aria to form controls - Mu-An Chiou [github/github@9bcb1dc](https://github.com/github/github/commit/9bcb1dc)
 
