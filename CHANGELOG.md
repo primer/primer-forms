@@ -1,3 +1,8 @@
+# v0.7.1
+
+ * More versions - Jon Rohan [github/github@e12ba2e](https://github.com/github/github/commit/e12ba2e)
+ * Pointing main js file to build - Jon Rohan [github/github@3575651](https://github.com/github/github/commit/3575651)
+
 # v0.7.0
 
  * updating versions after running version script - broccolini [github/github@61b8c6f](https://github.com/github/github/commit/61b8c6f)
