@@ -1,3 +1,9 @@
+# v0.7.3
+
+ * Rev package number - Patrick Marsceill [github/github@a0ec34d](https://github.com/github/github/commit/a0ec34d)
+ * Add aria-live for accessability and update docs - Patrick Marsceill [github/github@913473c](https://github.com/github/github/commit/913473c)
+ * Make form-radio-details -> form-checkbox-details to match existing - Patrick Marsceill [github/github@5be1795](https://github.com/github/github/commit/5be1795)
+
 # v0.7.2
 
  * update version numbers for primer package with bold update - broccolini [github/github@5d3e089](https://github.com/github/github/commit/5d3e089)
