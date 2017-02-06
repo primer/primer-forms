@@ -144,6 +144,15 @@ Make inputs smaller, larger, or full-width with an additional class.
 </form>
 ```
 
+##### Hide webkit's contact info autofill icon
+Webkit sometimes gets confused and tries to add an icon/dropdown to autofill contact information on fields that may not be appropriate (such as input for number of users). Use this class to override the display of this icon.
+
+```html
+<form>
+  <input class="form-control input-hide-webkit-autofill" placeholder="Hide Webkit's contact autofill on this input" type="text" aria-label="Hide Webkit's contact autofill on this input">
+</form>
+```
+
 #### Selects
 
 Primer adds light `height` and `vertical-align` styles to `<select>`s for all browsers to render them consistently with textual inputs.
@@ -267,6 +276,32 @@ You may also add emphasis to the label:
     <label>
       <input type="checkbox" checked="checked">
       <em class="highlight">Available for hire</em>
+    </label>
+  </div>
+</form>
+```
+
+##### Show / hide content based on a checkbox or radio button state
+
+Content that is hidden by default should only be done so if it is non-essential for the context of the surrounding content. Be sure to use the `aria-live="polite"` attribute on the parent label for added content to be announced when displayed.
+
+```html
+<form>
+  <div class="form-checkbox">
+    <label>
+      <input type="radio" name="hireme">
+      Not available for hire
+    </label>
+  </div>
+  <div class="form-checkbox">
+    <label aria-live="polite">
+      <input type="radio" class="form-checkbox-details-trigger" name="hireme">
+      Available for hire
+      <span class="form-checkbox-details text-normal">
+        <span class="d-block mb-1">Available hours per week</span>
+        <input type="text" name="" class="form-control input-contrast" size="3">
+        <span class="text-small text-gray pl-2">hours per week</span>
+      </span>
     </label>
   </div>
 </form>
