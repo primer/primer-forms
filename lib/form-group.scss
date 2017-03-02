@@ -168,11 +168,11 @@
   &.warn {
     .warning {
       color: $flash-text-yellow;
-      background-color: $flash-bg-yellow;
+      background-color: $yellow-100;
       border-color: $flash-border-yellow;
 
       &::after {
-        border-bottom-color: $flash-bg-yellow;
+        border-bottom-color: $yellow-100;
       }
 
       &::before {
@@ -187,16 +187,16 @@
     }
 
     .error {
-      color: $flash-text-red;
+      color: $red-900;
       background-color: $flash-bg-red;
-      border-color: $flash-border-red;
+      border-color: $border-red;
 
       &::after {
         border-bottom-color: $flash-bg-red;
       }
 
       &::before {
-        border-bottom-color: $flash-border-red;
+        border-bottom-color: $border-red;
       }
     }
   }
