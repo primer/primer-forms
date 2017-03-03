@@ -1,3 +1,8 @@
+# v1.0.2
+
+ * update variable name and bump version - broccolini [github/github@2777e1e](https://github.com/github/github/commit/2777e1e)
+ * update border names in form group - broccolini [github/github@c5ed399](https://github.com/github/github/commit/c5ed399)2
+
 # v1.0.1
 
 
