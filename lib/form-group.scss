@@ -168,14 +168,14 @@
     .warning {
       color: $yellow-900;
       background-color: $yellow-100;
-      border-color: $flash-border-yellow;
+      border-color: $border-yellow;
 
       &::after {
         border-bottom-color: $yellow-100;
       }
 
       &::before {
-        border-bottom-color: $flash-border-yellow;
+        border-bottom-color: $border-yellow;
       }
     }
   }
@@ -187,11 +187,11 @@
 
     .error {
       color: $red-900;
-      background-color: $flash-bg-red;
+      background-color: $bg-red-light;
       border-color: $border-red-light;
 
       &::after {
-        border-bottom-color: $flash-bg-red;
+        border-bottom-color: $bg-red-light;
       }
 
       &::before {
