@@ -1,3 +1,7 @@
+# v1.0.4
+
+ * Bump version again - Mu-An Chiou [github/github@026744a](https://github.com/github/github/commit/026744a)
+
 # v1.0.3
 
  * update variables in forms and bump version - broccolini [github/github@bd52621](https://github.com/github/github/commit/bd52621)
