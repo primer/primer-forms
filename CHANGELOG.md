@@ -1,3 +1,7 @@
+# v1.0.5
+
+ * @muan review on changelog and package.json - pifafu [github/github@96e78ad](https://github.com/github/github/commit/96e78ad)
+
 # v1.0.4
 
  * Bump version again - Mu-An Chiou [github/github@026744a](https://github.com/github/github/commit/026744a)
